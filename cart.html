@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout | SHINESHOP</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* CHECKOUT PAGE STYLES */
+
+    .checkout-container {
+      padding: 15px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .checkout-title {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .checkout-section {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .checkout-section h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .checkout-info p {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .edit-link {
+      font-size: 13px;
+      color: #ff5722;
+      text-decoration: none;
+    }
+
+    .order-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .order-item img {
+      width: 70px;
+      border-radius: 5px;
+    }
+
+    .order-details {
+      flex: 1;
+    }
+
+    .order-details h4 {
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    .order-price {
+      color: #ff5722;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .place-order {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background: #ff5722;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .place-order:hover {
+      background: #e64a19;
+    }
+
+    @media (min-width: 768px) {
+      .order-item img {
+        width: 90px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">SHINESHOP</div>
+  <input type="text" class="search" placeholder="Search products...">
+  <div class="icons">
+    <a href="cart.html">🛒</a>
+    <a href="login.html">👤</a>
+  </div>
+</header>
+
+<!-- CHECKOUT -->
+<section class="checkout-container">
+  <h2 class="checkout-title">Checkout</h2>
+
+  <!-- DELIVERY ADDRESS -->
+  <div class="checkout-section">
+    <h3>Delivery Address</h3>
+    <div class="checkout-info">
+      <p><strong>Angielica Bulanon</strong></p>
+      <p>3774,st' bernadita street Delapaz biñan laguna</p>
+      <p>Biñan City, Laguna</p>
+      <p>📞 09814792533</p>
+      <a href="#" class="edit-link">Change Address</a>
+    </div>
+  </div>
+
+  <!-- PAYMENT METHOD -->
+  <div class="checkout-section">
+    <h3>Payment Method</h3>
+    <div class="checkout-info">
+      <p>Cash on Delivery (COD)</p>
+      <a href="#" class="edit-link">Change Payment Method</a>
+    </div>
+  </div>
+
+  <!-- ORDER ITEMS -->
+  <div class="checkout-section">
+    <h3>Order Summary</h3>
+
+    <div class="order-item">
+           <img src="/images (1).jpeg"  alt="cherry lipstick">
+      <div class="order-details">
+        <h4>Cherry lipstick</h4>
+        <p class="order-price">₱299</p>
+      </div>
+    </div>
+
+    <div class="order-item">
+          <img src="/images (3).jpeg" alt="">
+      <div class="order-details">
+        <h4>Lyacmy Sexy Lace Underwear for Women, Invisible Seamless Cotton Panties for Women 6Pack</h4>
+        <p class="order-price">₱320</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRICE SUMMARY -->
+  <div class="checkout-section">
+    <div class="summary-row">
+      <span>Subtotal</span>
+      <span>₱619</span>
+    </div>
+    <div class="summary-row">
+      <span>Shipping</span>
+      <span>₱64</span>
+    </div>
+    <div class="summary-row">
+      <strong>Total</strong>
+      <strong>₱683</strong>
+    </div>
+
+    <a href="success.html" class="place-order">Place Order</a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 SHINESHOP. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

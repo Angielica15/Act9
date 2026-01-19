@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Details |SHINESHOP</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* PRODUCT PAGE STYLES */
+
+    .product-container {
+      padding: 15px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .product-wrapper {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .product-main {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .product-image img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .product-info h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 22px;
+      color: darkblue;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product-desc {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .product-actions a {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .add-cart {
+      background: #ff5722;
+      color: white;
+    }
+
+    .add-cart:hover {
+      background: #e64a19;
+    }
+
+    .buy-now {
+      border: 1px solid #ff5722;
+      color: #ff5722;
+    }
+
+    .buy-now:hover {
+      background: #fff3e0;
+    }
+
+    .product-details {
+      margin-top: 20px;
+    }
+
+    .product-details h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .product-details ul {
+      font-size: 14px;
+      padding-left: 18px;
+    }
+
+    @media (min-width: 768px) {
+      .product-main {
+        flex-direction: row;
+        gap: 30px;
+      }
+
+      .product-image,
+      .product-info {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">SHINESHOP</div>
+  <input type="text" class="search" placeholder="Search products...">
+  <div class="icons">
+    <a href="cart.html">🛒</a>
+    <a href="login.html">👤</a>
+    <a href="Act 9.html">🏠</a>
+  </div>
+</header>
+
+<!-- PRODUCT DETAILS -->
+<section class="product-container">
+  <div class="product-wrapper">
+
+    <div class="product-main">
+      <!-- IMAGE -->
+      <div class="product-image">
+            <img src="/IMG_20260119_152900.jpg" alt="Wireless Earbuds">
+      </div>
+
+      <!-- INFO -->
+      <div class="product-info">
+        <h1>New Korean style women's white sneakers with thick soles, fashionable and versatile casual shoe</h1>
+        <p class="product-price">₱999</p>
+        <p class="product-desc">
+          Fashionable and versatile casual shoes with thick soles, designed for a trendy Korean aesthetic. Made with high-quality materials for all-day comfort, suitable for daily activities like walking, shopping, and light outdoor use.
+        </p>
+
+        <div class="product-actions">
+          <a href="cart.html" class="add-cart">Add to Cart</a>
+          <a href="checkout.html" class="buy-now">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+<!-- DETAILS -->
+    <div class="product-details">
+      <h3>Product Details</h3>
+      <ul>
+        <li>Upper Material: Faux leather (water-resistant and easy to clean)</li>
+        <li>Sole Type: Rubber platform sole (2.5cm heel height for lift without discomfort)</li>
+        <li>Fit: True to size; available in US 5–10 (Philippine 35–40)</li>
+        <li>Color Option: Solid white (additional colors may be available upon request)</li>
+        <li>Care Instructions: Wipe with a damp cloth; avoid machine washing</li>
+        <li>Warranty: 30-day manufacturer warranty against defects in materials/workmanship</li>
+        <li>Package Includes: 1 pair of sneakers, dust bag</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 SHINESHOP. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
